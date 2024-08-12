@@ -1,0 +1,376 @@
+/* Font Face */
+@font-face {
+    font-family: 'Asian Hiro';
+    src: url('assets/fonts/a_asian_hiro/aAsianHiro.otf') format('opentype');
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #FCECEA;
+    --secondary-color: #E34234;
+    --accent-color: #EC8177;
+    --text-color: #333333;
+}
+
+/* General Styles */
+body {
+    color: var(--text-color);
+}
+
+/* Backgrounds */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    background-image: url('assets/images/bg.png');
+}
+
+.bg-secondary {
+    background-color: whitesmoke !important;
+}
+
+.bg-third {
+    background-image: url(assets/images/background-vid.png) !important;
+}
+
+/* Text Colors */
+.text-accent {
+    color: var(--accent-color);
+}
+
+.red-text {
+    color: white !important;
+}
+
+/* Headers */
+.h1 {
+    color: white;
+}
+
+.lead{
+    text-align:center;
+}
+
+h1.display-4 {
+    color: #E34234;
+    font-family: 'Asian Hiro', sans-serif;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #E34234;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.mb-5 {
+    font-family: 'Asian Hiro', sans-serif;
+    font-size: 2.5rem;
+    color: #E34234;
+}
+
+.mb-6 {
+    font-family: 'Asian Hiro', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+
+}
+
+.mb-5-red{
+    color: #E34234;
+
+}
+
+.bg-too{
+    background-color: #F8F3EA;
+}
+
+
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+    border-bottom: 2px solid #E34234;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-brand {
+    color: black;
+}
+
+.modal-classic{
+    /* background-color:red; */
+}
+
+.red-btn{
+    background-color: #E34234;
+    color: white;
+
+}
+
+/* Inputs */
+.input[type=text] {
+    float: right;
+    padding: 6px;
+    border: 10px solid #E34234;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.search-bar {
+    border-radius: 20px;
+    border: 1px solid #E34234;
+    padding: 6px 12px;
+}
+
+/* Icons */
+.cart-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #E34234;
+}
+
+.corner-icon {
+    position: absolute;
+    font-size: 3rem;
+    color: var(--accent-color);
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.top-left {
+    top: -10px;
+    left: 25px;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Sections */
+.landing {
+    position: relative;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.landing .corner-icon img {
+    max-height: 100%; /* Ensure it fits within the section */
+    max-width: 100%; /* Ensure it fits within the section */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.menu-page {
+    background-color: #F8F3EA;
+}
+
+.contact-section {
+    background-color: #FCECEA;
+}
+
+/* Cards */
+.card {
+    background-color: #F8F3EA !important;
+}
+
+.card-body {
+    border: 1px solid #E34234;
+    border-radius: 10px;
+}
+
+.card-text {
+    color: black;
+}
+
+.card-img-top {
+    background-color: #F8F3EA !important;
+}
+
+/* GIFs */
+.uniform-gif {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+    font-family: 'Asian Hiro', sans-serif;
+    background-color: #E34234;
+    border-color: #E34234;
+    padding: 10px 30px; /* Make button longer */
+}
+
+.btn-primary:hover {
+    background-color: #EC8177;
+    border-color: #EC8177;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+    background-color: #E34234;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.contact-form-wrapper .corner-btn {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-wrapper .corner-btn:hover {
+    background-color: #F8F3EA;
+    border-color: #F8F3EA;
+}
+
+#about .corner-btn {
+    position: absolute;
+    /* bottom: 5px; */
+    right: 10px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#about .corner-btn:hover {
+    background-color: #F8F3EA;
+    border-color: #F8F3EA;
+
+}
+
+/* TikTok Videos */
+#tiktok-videos .video-wrapper {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+#tiktok-videos video {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    color: black;
+}
+
+footer a {
+    color: #E34234;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #E34234;
+}
+
+footer .fab {
+    font-size: 1.5rem;
+}
+
+.mb-3{
+    color: black;
+}
+
+.me-2{
+    color: black;
+}
+
+/* Additional Styles */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.story-group {
+    opacity: 0.7;
+}
+
+.story-box {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: #E34234;
+}
+
+
+/* Benefits Section */
+.benefit-card {
+    background-color: #F8F3EA; /* Tan background */
+}
+
+.benefit-title {
+    color: #E34234; /* Red headers */
+}
+
+.benefit-card .card-text {
+    color: black; /* Black paragraph text */
+}
+
+@media (max-width: 767.98px) {
+    .benefit-card {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+/* Cart Summary */
+.cart-summary {
+    background-color: var(--secondary-color);
+    border: 2px solid black;
+    color: black;
+}
+
+.cart-summary button {
+    background-color: var(--secondary-color);
+    color: white;
+}

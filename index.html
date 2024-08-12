@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vegan Milk Bread Boss</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <!-- Navigation -->—
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/logo-main.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="" data-bs-toggle="modal" data-bs-target="#checkoutModal">TEST CHECKOUT MODAL</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <input type="text" class="search-bar" placeholder="Search.." id="searchInput">
+                        <a data-bs-toggle="modal" data-bs-target="#cartModal"><span class="cart-icon">&#128722;</span></a>
+                        <ul id="searchResults" class="list-group position-absolute" style="top: 50px; z-index: 1000; width: 100%;"></ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Landing Page -->
+    <section id="home" class="bg-primary py-5 position-relative landing">
+        <div class="corner-icon top-left">
+            <img src="assets/vectors/design-top-left.png" alt="Placeholder icon top left" class="img-fluid">
+        </div>
+        <div class="corner-icon bottom-right">
+            <img src="assets/vectors/design-bottom-right.png" alt="Placeholder icon bottom right" class="img-fluid">
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/bread-bag.png" alt="Vegan Japanese Milk Bread" class="img-fluid">
+                </div>
+                <div class="col-md-6 bold-text">
+                    <h1 class="display-4 mb-4">Vegan Milk Bread Boss</h1>
+                    <p class="lead mb-4 bold-text">Welcome to Vegan Milk Bread Boss,<br> where every corner whispers<br> tales warmth and flavor.</p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#checkoutModal" class="btn btn-primary btn-lg">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Page -->
+    <section id="menu" class="py-5 menu-page">
+        <div class="container">
+            <h2 class="text-center mb-5 large-text">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/images/specialty.png" class="card-img-top" alt="Specialty Milk Bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Milk Bread</h5>
+                            <p class="card-text">Soft and fluffy traditional milk bread, perfect for any occasion.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/images/flavored.png" class="card-img-top" alt="Specialty Milk Bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Flavored Milk Bread</h5>
+                            <p class="card-text">Milk bread infused with delightful flavors like matcha and chocolate.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#flavoredMilkBreadModal">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/images/specialty-2.png" class="card-img-top" alt="Specialty Milk Bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Specialty Milk Bread</h5>
+                            <p class="card-text">Unique creations like milk bread rolls and milk bread donuts.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#specialtyMilkBreadModal">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-center mb-5 mb-5-red">Unlimited Possibilities</h3>
+
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/gifs/loafs.gif" class="card-img-top uniform-gif" alt="Specialty Milk Bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Loaf</h5>
+                            <p class="card-text">Whole Loaves, Usually 8-12 Slices Each of Premium Hokkaido.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/images/menu-page/30.png" class="card-img-top uniform-gif" alt="Specialty Milk Bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Slices</h5>
+                            <p class="card-text">Get it by the Slice, Only available at select locations.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/images/sandwich.png" class="card-img-top uniform-gif" alt="Specialty Milk Bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Sandwhiches</h5>
+                            <p class="card-text">Coming Soon...</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="assets/gifs/frozen.gif" class="card-img-top uniform-gif" alt="Specialty Milk Bread">
+                        <div class="card-body">
+                            <h5 class="card-title">Frozen</h5>
+                            <p class="card-text">Best for Longer term storage if you will be using the bread periodically.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Product Details Modal -->
+     <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.pexels.com/photos/1556693/pexels-photo-1556693.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Product" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 modal-classic">
+                            <h3>Classic Milk Bread</h3>
+                            <p>The original soft and fluffy vegan Japanese milk bread.</p>
+                            <ul>
+                                <li>Price: $33</li>
+                                <li>Ingredients: Flour, water, yeast, sugar, salt</li>
+                                <li>Nutritional Value: 100 calories per serving</li>
+                                <li>Allergen Information: Contains gluten</li>
+                            </ul>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Specialty Milk Bread" data-price="15.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary red-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Classic Milk Bread Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.pexels.com/photos/1556693/pexels-photo-1556693.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Product" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 modal-classic">
+                            <h3>Classic Milk Bread</h3>
+                            <p>The original soft and fluffy vegan Japanese milk bread.</p>
+                            <ul>
+                                <li>Price: $33</li>
+                                <li>Ingredients: Flour, water, yeast, sugar, salt</li>
+                                <li>Nutritional Value: 100 calories per serving</li>
+                                <li>Allergen Information: Contains gluten</li>
+                            </ul>
+                            <button class="btn btn-primary add-to-cart-btn" data-name="Specialty Milk Bread" data-price="15.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary red-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flavored Milk Bread Modal -->
+<div class="modal fade" id="flavoredMilkBreadModal" tabindex="-1" aria-labelledby="flavoredMilkBreadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="flavoredMilkBreadModalLabel">Flavored Milk Bread</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/assets/images/IMG_1387.jpg" alt="Product" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Flavored Milk Bread</h3>
+                        <p>Milk bread infused with delightful flavors like matcha and chocolate.</p>
+                        <ul>
+                            <li>Price: $40</li>
+                            <li>Ingredients: Flour, water, yeast, sugar, salt, flavoring</li>
+                            <li>Nutritional Value: 110 calories per serving</li>
+                            <li>Allergen Information: Contains gluten</li>
+                        </ul>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Flavored Milk Bread" data-price="12.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Specialty Milk Bread Modal -->
+<div class="modal fade" id="specialtyMilkBreadModal" tabindex="-1" aria-labelledby="specialtyMilkBreadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="specialtyMilkBreadModalLabel">Specialty Milk Bread</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/assets/images/IMG_1385.jpg" alt="Product" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Specialty Milk Bread</h3>
+                        <p>Unique creations like milk bread rolls and milk bread donuts.</p>
+                        <ul>
+                            <li>Price: $60</li>
+                            <li>Ingredients: Flour, water, yeast, sugar, salt, special ingredients</li>
+                            <li>Nutritional Value: 120 calories per serving</li>
+                            <li>Allergen Information: Contains gluten</li>
+                        </ul>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Specialty Milk Bread" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems"></div>
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <h5>Total: $<span id="cartTotal">0.00</span></h5>
+                    <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Checkout Modal -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="entry.EMAIL_ENTRY_ID" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="phone" name="entry.PHONE_ENTRY_ID" required>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="entry.NAME_ENTRY_ID" required>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Order by the Loaf</h3>
+                        <img src="assets/images/checkout/loaf.png" class="img-fluid" alt="Order by the Loaf">
+                        <div class="mt-3">
+                            <label for="loafQuantity" class="form-label">Quantity:</label>
+                            <input type="number" class="form-control" id="loafQuantity" value="1" min="1">
+                        </div>
+                        <button class="btn btn-primary mt-3 update-cart-btn" data-item="Loaf">Update</button>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Order by the Slice</h3>
+                        <img src="assets/images/checkout/loaf-slice.png" class="img-fluid" alt="Order by the Slice">
+                        <div class="mt-3">
+                            <label for="sliceQuantity" class="form-label">Quantity:</label>
+                            <input type="number" class="form-control" id="sliceQuantity" value="1" min="1">
+                        </div>
+                        <button class="btn btn-primary mt-3 update-cart-btn" data-item="Slice">Update</button>
+                    </div>
+                </div>
+                <div class="cart-summary mt-5 p-3">
+                    <h4>Cart Summary</h4>
+                    <div id="cartSummaryItems"></div>
+                    <h5>Total: $<span id="cartSummaryTotal">0.00</span></h5>
+                </div>
+               
+                
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="confirmOrderBtn">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   
+ <!-- About THE BAKER Page -->
+ <section id="about" class="bg-third py-5">
+    <div class="container">
+        <h2 class="text-center mb-6 about">About The Baker</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/assets/logo-main.png" alt="About Us" class="img-fluid mb-4">
+            </div>
+            <div class="col-md-6 story-group">
+                <!-- <h3>My Story</h3> -->
+                <div class="story-box">
+                    <p class="red-text">Welcome to my bakery! 
+
+                        My name is Zoë, and my journey with baking started at a young age. 
+                        
+                        My first job was at a local bakery, where I would wake up early before school to work, often arriving at class smelling like fresh donuts.
+                        
+                         Every morning, my father would cheerfully say, "It's time to make the donuts!" and off I went.</p>
+                    <h3 class="red-text" >Reflecting</h3>
+                    <p class="red-text">
+                        Looking back, those early mornings were more than just a job—they were the beginning of my passion for baking.
+                        
+                         Now, I infuse my creations with the healing and loving powers I feel in my hands, a gift I’ve always known I possessed.
+                        
+                        It brings me immense joy to witness the deliciousness of my bread and the power savored in every bite.</p>
+                    <h3 class="red-text">My Recipe</h3>
+                    <p class="red-text">bread flour, Sea Salt, cornstarch, plant-based milk, vegan butter, water, yeast</p>
+                    
+                    <a href="#menu" >
+                        <button class="corner-btn">Unlimited Possibilities</button>
+
+                    </a>
+
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="bg-third py-5">
+    <h2 class="text-center mb-6 red-text">More Info</h2>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <img src="https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=300" alt="About Us" class="img-fluid mb-4">
+                </div>
+                <div class="col-md-6 story-group">
+                    <div class="story-box">
+                    <h3 class="red-text">Founding Story</h3>
+                    <p class="red-text">At VeganMilkBreadBoss, we believe in the magic of bringing traditional flavors and modern values together. Our journey began with a passion for Japanese milk bread, known for its incredibly soft and fluffy texture. However, we wanted to create a version that everyone could enjoy, including those following a vegan lifestyle. Through countless trials and taste tests, we perfected our vegan Hokkaido milk bread recipe, ensuring it retained the same delightful taste and texture without any dairy. Today, we proudly offer a range of vegan milk breads, made with love and the finest plant-based ingredients, ready to be enjoyed by all.</p>
+                    <a href="#benefits" >
+                        <button class="corner-btn">The Benefits</button>
+
+                    </a>
+                    </div>
+
+                    <div class="story-box">
+                        <h3 class="red-text">Our Mission</h3>
+                    <p class="red-text">Our mission at VeganMilkBreadBoss is to provide delicious, high-quality vegan baked goods that honor traditional Japanese baking methods while embracing modern, plant-based living. We strive to create a positive impact on our community and the environment by using sustainable ingredients and practices. Our goal is to make vegan options accessible and enjoyable for everyone, ensuring that no one has to compromise on taste or quality.</p>
+                    <a href="#contact" >
+                        <button class="corner-btn">Support</button>
+                    </a>
+
+                    </div>
+                    
+                  
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section id="benefits" class="bg-third py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 red-text">The Benefits</h2>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 benefit-card">
+                    <div class="card-body">
+                        <h5 class="card-title benefit-title">100% Vegan</h5>
+                        <p class="card-text">Totally plant-based and delicious!.<br> Perfect for everyone, whether you're vegan or just love amazing bread.</p>
+                    </div>
+                </div>
+                <div class="card mb-4 benefit-card">
+                    <div class="card-body">
+                        <h5 class="card-title benefit-title">Top Quality Ingredients</h5>
+                        <p class="card-text">Only the best for our bread! We source top-notch ingredients to ensure every loaf is super tast and wholesome.</p>
+                    </div>
+                </div>
+                <div class="card mb-4 benefit-card">
+                    <div class="card-body">
+                        <h5 class="card-title benefit-title">Handmade With Love</h5>
+                        <p class="card-text">Each Load iis crafted with love and a sprinkle of my special touch. You can taste the care in every bite!</p>
+                    </div>
+                </div>
+                <div class="card mb-4 benefit-card">
+                    <div class="card-body">
+                        <h5 class="card-title benefit-title">Exclusively Available Here</h5>
+                        <p class="card-text">As the sole provider, we handcraft each loaf with care and expertise, ensuring a unique taste experience you won't find elsewhere. <br> Indulge, knowing each bite supports our commitment to artisinal experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  align-items-center justify-content-center">
+                <img src="assets/images/benefits/benefitsbread.png" alt="Benefits Image" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 benefit-card">
+                    <div class="card-body">
+                        <h5 class="card-title benefit-title">Nourishing</h5>
+                        <p class="card-text">Our bread not only tastes amazing but also nourishes your body and soul. <br> Enjoy every bite, knowing its good for you.</p>
+                    </div>
+                </div>
+                <div class="card mb-4 benefit-card">
+                    <div class="card-body">
+                        <h5 class="card-title benefit-title">Versatile and Delicious</h5>
+                        <p class="card-text">Sweet or savory, our bread<br> is perfect for any topping.<br> It's your new go-to for every meal!</p>
+                    </div>
+                </div>
+                <div class="card mb-4 benefit-card">
+                    <div class="card-body">
+                        <h5 class="card-title benefit-title">Artisan Craftsmanship</h5>
+                        <p class="card-text">Every loaf is a little masterpiece, made with passion and meticulous attention to detail.<br> Quality you can trust!</p>
+                    </div>
+                </div>
+                <div class="card mb-4 benefit-card">
+                    <div class="card-body">
+                        <h5 class="card-title benefit-title">Soft and Fluffy</h5>
+                        <p class="card-text">Our bread is incredibly soft and fluffy - like biting into a cloud!<br> Perfect for sandwiches or on its own.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+     <!-- Contact Us Page -->
+<section id="contact" class="py-5 contact-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Get In Touch</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="underlined">Email</h4>
+                <ul class="list-unstyled">
+                    <li><strong>info@veganmilkbreadboss.com</strong> </li>
+                </ul>
+                <h4 class="underlined">Business Hours</h4>
+                <ul class="list-unstyled">
+                    <li><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</li>
+                    <li><strong>Saturday - Sunday:</strong> Closed</li>
+                </ul>
+                <h4 class="underlined">Delivery Options</h4>
+                <ul class="list-unstyled">
+                    <li>Local Delivery (AZ | Mesa/Tempe)</li>
+                    <li>Pickup Available (AZ | Mesa)</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-form-wrapper">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLScUBgeSBBjNNsMAjw9mATnSVqzCRPwu5x9euQdMUcCkmZ_pwA/formResponse" method="post" target="_blank">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="entry.1896194542" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="entry.115355437" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" name="entry.98054883" required></textarea>
+                        </div>
+                        <button  type="submit" class="btn btn-primary corner-btn">Send Message</button>
+                        <!-- <button type="submit" class="btn btn-primary">Send Message</button> -->
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><span>Email:</span> info@veganmilkbreadboss.com</li>
+                    <li><span>Phone [Text-Only]:</span> <a href="tel:4809398514">(480) 939-8514</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5>Follow Us</h5>
+                <a href="https://www.tiktok.com/@veganmilkbreadboss" class=" me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-2"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="col-md-4">
+                <h5 class="">Location</h5>
+                <p class="me-2">Chandler, AZ </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <p class="mb-0 me-2">&copy; 2024 Vegan Milk Bread Boss. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Testimonials Page -->
+    <!-- <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Testimonials</h2>
+            <div id="testimonialCarousel" class="" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p class="card-text">"The vegan milk bread is amazing! It's soft, fluffy, and delicious."</p>
+                                        <p class="card-text text-end"><small class="text-muted">- John Doe</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p class="card-text">"I can't believe this milk bread is vegan. It tastes just like the real thing!"</p>
+                                        <p class="card-text text-end"><small class="text-muted">- Jane Smith</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p class="card-text">"The flavored milk bread is a game-changer. The matcha flavor is my favorite!"</p>
+                                        <p class="card-text text-end"><small class="text-muted">- The Nile Coffee Shop</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p class="card-text">"I love using this milk bread for my sandos. It's the perfect texture and flavor."</p>
+                                        <p class="card-text text-end"><small class="text-muted">- Sarah Lee</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p class="card-text">"The specialty milk bread creations are always a pleasant surprise. Can't wait to see what they come up with next!"</p>
+                                        <p class="card-text text-end"><small class="text-muted">- David Kim</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p class="card-text">"As a restaurant owner, I'm always looking for unique vegan options. This milk bread is a hit with our customers!"</p>
+                                        <p class="card-text text-end"><small class="text-muted">- Emily Chen</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Blog or Recipe Page -->
+    <!-- <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Blog</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Baking at Home: Tips for Perfect Vegan Breads
+</h5>
+                            <p class="card-text">Get expert tips on baking the best vegan breads at home. From ingredient substitutions to kneading techniques, we've got you covered.</p>
+                            <a href="#" class="btn btn-primary">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">The Art of Vegan Japanese Milk Bread
+</h5>
+                            <p class="card-text">Discover the secrets behind creating the perfect vegan Japanese milk bread. Learn about the ingredients, techniques, and love that goes into every loaf.</p>
+                            <a href="#" class="btn btn-primary">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Why Choose Vegan: Health and Environmental Benefits
+</h5>
+                            <p class="card-text">Explore the many benefits of a vegan lifestyle, from improved health to a lower environmental impact. Find out how small changes in your diet can make a big difference.</p>
+                            <a href="#" class="btn btn-primary">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- TikTok Style Videos Section -->
+<!-- <section id="tiktok-videos" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">TikTok Videos</h2>
+        <div id="tiktokCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="video-wrapper">
+                        <video src="path/to/video1.mp4" class="d-block w-100" controls></video>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <video src="path/to/video2.mp4" class="d-block w-100" controls></video>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <video src="path/to/video3.mp4" class="d-block w-100" controls></video>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#tiktokCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#tiktokCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+    <script>
+        const sections = [
+        { id: 'home', name: 'Home' },
+        { id: 'menu', name: 'Menu' },
+        { id: 'contact', name: 'Contact Us' },
+        { id: 'testimonials', name: 'Testimonials' },
+        { id: 'about', name: 'About Us' },
+        { id: 'blog', name: 'Blog' }
+    ];
+
+    const products = [
+        { name: 'Classic Milk Bread', link: '#checkout' },
+        { name: 'Flavored Milk Bread', link: '#checkout' },
+        { name: 'Specialty Milk Bread', link: '#checkout' }
+    ];
+
+    document.getElementById('searchInput').addEventListener('input', function () {
+        const query = this.value.toLowerCase();
+        const searchResults = document.getElementById('searchResults');
+        searchResults.innerHTML = '';
+
+        if (query) {
+            const sectionMatches = sections.filter(section => section.name.toLowerCase().includes(query));
+            const productMatches = products.filter(product => product.name.toLowerCase().includes(query));
+
+            sectionMatches.forEach(section => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item';
+                li.textContent = section.name;
+                li.addEventListener('click', () => {
+                    document.getElementById(section.id).scrollIntoView();
+                    searchResults.innerHTML = '';
+                });
+                searchResults.appendChild(li);
+            });
+
+            productMatches.forEach(product => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item';
+                li.textContent = product.name;
+                li.addEventListener('click', () => {
+                    window.location.href = product.link;
+                });
+                searchResults.appendChild(li);
+            });
+        }
+    });
+
+    document.addEventListener('click', function (e) {
+        const searchResults = document.getElementById('searchResults');
+        if (!document.getElementById('searchInput').contains(e.target)) {
+            searchResults.innerHTML = '';
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = document.querySelector('#tiktokCarousel');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: false,
+        wrap: false
+    });
+
+    let cart = [];
+
+    // Function to update the cart modal
+    function updateCart() {
+        const cartItemsContainer = document.getElementById('cartItems');
+        const cartTotal = document.getElementById('cartTotal');
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('cart-item', 'd-flex', 'justify-content-between', 'align-items-center', 'mb-2');
+            itemElement.innerHTML = `
+                <div>${item.name} - $${item.price}</div>
+                <div>
+                    <button class="btn btn-sm btn-danger remove-btn" data-name="${item.name}">Remove</button>
+                </div>
+            `;
+            cartItemsContainer.appendChild(itemElement);
+            total += item.price;
+        });
+
+        cartTotal.innerText = total.toFixed(2);
+    }
+
+    // Function to update the cart summary
+    function updateCartSummary() {
+        const cartSummaryItems = document.getElementById('cartSummaryItems');
+        const cartSummaryTotal = document.getElementById('cartSummaryTotal');
+        cartSummaryItems.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('cart-item', 'd-flex', 'justify-content-between', 'align-items-center', 'mb-2');
+            itemElement.innerHTML = `
+                <div>${item.name} - $${item.price} x ${item.quantity}</div>
+                <div>
+                    <button class="btn btn-sm btn-danger remove-btn" data-name="${item.name}">Remove</button>
+                </div>
+            `;
+            cartSummaryItems.appendChild(itemElement);
+            total += item.price * item.quantity;
+        });
+
+        cartSummaryTotal.innerText = total.toFixed(2);
+    }
+
+    // Function to update the cart and cart summary
+    function addToCart(name, price, quantity = 1) {
+        const existingItem = cart.find(item => item.name === name);
+        if (existingItem) {
+            existingItem.quantity += quantity;
+        } else {
+            cart.push({ name, price, quantity });
+        }
+        updateCart();
+        updateCartSummary();
+    }
+
+    // Event listener for adding items to the cart
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const name = this.dataset.name;
+            const price = parseFloat(this.dataset.price);
+            addToCart(name, price);
+        });
+    });
+
+    // Event listener for removing items from the cart
+    document.getElementById('cartItems').addEventListener('click', function(event) {
+        if (event.target.classList.contains('remove-btn')) {
+            const name = event.target.dataset.name;
+            cart = cart.filter(item => item.name !== name);
+            updateCart();
+        }
+    });
+
+    // Event listener for checkout button
+    document.getElementById('checkoutBtn').addEventListener('click', function() {
+        alert('Checkout not implemented yet.');
+        // Here you can add your order processing logic
+    });
+
+    // Event listener for updating cart from checkout modal
+    document.querySelectorAll('.update-cart-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const item = this.dataset.item;
+            const quantity = parseInt(document.getElementById(item.toLowerCase() + 'Quantity').value, 10);
+            const price = item === 'Loaf' ? 15.00 : 5.00; // Example prices
+            addToCart(item, price, quantity);
+        });
+    });
+
+    // Event listener for confirming order
+    document.getElementById('confirmOrderBtn').addEventListener('click', function() {
+        alert('Order confirmed!');
+        // Here you can add your order processing logic
+    });
+
+
+    document.getElementById('confirmOrderBtn').addEventListener('click', function() {
+    // Collect order details
+    const orderDetails = cart.map(item => `${item.name} - $${item.price} x ${item.quantity}`).join(', ');
+    const total = document.getElementById('cartSummaryTotal').innerText;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const name = document.getElementById('name').value;
+
+    // Create a form element to submit the order details
+    const form = document.createElement('form');
+    form.action = 'https://docs.google.com/forms/d/e/1FAIpQLSc1mt4t2UIf01lG_UIPsfCRmhGGhb6IETgYzYCcoR7ma9DjWA/formResponse'; // Replace with your Google Form ID
+    form.method = 'POST';
+    form.target = '_blank';
+
+    // Create input elements for the form
+    const orderInput = document.createElement('input');
+    orderInput.type = 'hidden';
+    orderInput.name = 'entry.1697319843'; // Replace with your order entry ID
+    orderInput.value = orderDetails;
+
+    const totalInput = document.createElement('input');
+    totalInput.type = 'hidden';
+    totalInput.name = 'entry.1828170369'; // Replace with your total entry ID
+    totalInput.value = total;
+
+    const emailInput = document.createElement('input');
+    emailInput.type = 'hidden';
+    emailInput.name = 'entry.289347948'; // Replace with your email entry ID
+    emailInput.value = email;
+
+    const phoneInput = document.createElement('input');
+    phoneInput.type = 'hidden';
+    phoneInput.name = 'entry.232489781'; // Replace with your phone entry ID
+    phoneInput.value = phone;
+
+    const nameInput = document.createElement('input');
+    nameInput.type = 'hidden';
+    nameInput.name = 'entry.994027292'; // Replace with your phone entry ID
+    nameInput.value = name;
+
+    // Append inputs to the form
+    form.appendChild(orderInput);
+    form.appendChild(totalInput);
+    form.appendChild(emailInput);
+    form.appendChild(phoneInput);
+    form.appendChild(nameInput);
+
+    // Append form to the body and submit
+    document.body.appendChild(form);
+    form.submit();
+
+    alert('Order submitted! We will contact you for payment details.');
+
+    // Clear cart after order is confirmed
+    cart = [];
+    updateCart();
+    updateCartSummary();
+    });
+
+
+
+    
+});
+
+
+
+</script>
+</body>
+</html>
